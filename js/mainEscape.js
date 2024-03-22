@@ -507,7 +507,7 @@ function keyUpHandler(event) {  //Ajusta el movimiento del jugador (2)
 //INTERACCIÓN COFRE
 // Función para verificar si el jugador está cerca del cofre
 function playerCercaDeCofre() {
-    const distance = Math.sqrt(Math.pow(player.x - cofre.x, 2) + Math.pow(player.y - cofre.y, 2));
+    const distance = Math.sqrt(Math.pow(player.x - cofre.x, 2) + Math.pow(player.y - cofre.y, 2));  //*Calculos euclidianos
     return distance < 100; // Define un radio de proximidad al cofre
 }
 
@@ -528,7 +528,7 @@ function manejarInputCofrePass(userInput){
 }
 
 
-//*Calculos euclidianos
+
 //INTERACCIÓN SOFÁ
 function playerCercaSofa(){
     const distance = Math.sqrt(Math.pow(player.x - sofaBot.x, 2) + Math.pow(player.y - sofaBot.y, 2));
